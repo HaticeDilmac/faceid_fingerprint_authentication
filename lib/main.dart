@@ -15,16 +15,16 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late final LocalAuthentication auth;
-  bool _supportState = false;
+  late final LocalAuthentication auth; // Biometric authentication instance
+  bool _supportState = false; // Device support state for biometrics
 
   @override
   void initState() {
     super.initState();
-    auth = LocalAuthentication();
+    auth = LocalAuthentication(); // Initialize the LocalAuthentication instance
     auth.isDeviceSupported().then((bool isSupported) => setState(() {
-          _supportState = isSupported;
-        })); //device scan how to supportß
+          _supportState = isSupported; // Check if device supports biometric authentication
+        }));
   }
 
   @override
@@ -32,39 +32,41 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Fingerprint/FaceID Authentiction'),
+          title: const Text('Fingerprint/FaceID Authentication'),
         ),
         body: Column(
           children: [
+            // Display device support state for biometrics
             if (_supportState)
               const Text('This device is supported')
             else
-              const Text('This devide is not supported'),
+              const Text('This device is not supported'),
             const Divider(),
-            //get bometrics type
+            // Button to get available biometric types
             ElevatedButton(
                 onPressed: _getBiometrics,
-                child: const Text('Get avaliable biometrics')),
-            //Emülatör üzerinden face id denemesi
+                child: const Text('Get available biometrics')),
+            // Button to initiate biometric authentication
             ElevatedButton(
                 onPressed: _authenticate,
-                child: const Text('Get Authenticated'))
+                child: const Text('Authenticate'))
           ],
         ),
       ),
     );
   }
 
+  // Function to authenticate using biometrics
   Future<void> _authenticate() async {
     try {
       bool authenticated = await auth.authenticate(
-          localizedReason: 'Subscribe or you never find ant stCK overflow',
+          localizedReason: 'Please authenticate to access the app',
           options: const AuthenticationOptions(
-              //pin code or bionetric photo
+              // Require biometric authentication only
               stickyAuth: true,
               biometricOnly: true));
       if (kDebugMode) {
-        print('Authentcared: $authenticated');
+        print('Authenticated: $authenticated');
       }
     } on PlatformException catch (e) {
       if (kDebugMode) {
@@ -73,11 +75,12 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  // Function to get available biometric types
   Future<void> _getBiometrics() async {
-    List<BiometricType> avaliableBiometrics =
-        await auth.getAvailableBiometrics(); //return to avaliable biometrics
+    List<BiometricType> availableBiometrics =
+        await auth.getAvailableBiometrics(); // Get available biometric types
     if (kDebugMode) {
-      print('list of avaliableBiometrics: $avaliableBiometrics');
+      print('List of available biometrics: $availableBiometrics');
     }
 
     if (!mounted) {
