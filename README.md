@@ -56,7 +56,7 @@ Here is a summary of the key methods used:
 <img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/9fffec75-78a3-4111-9bbf-d3436d0cc421" width="200" height="400">  
 <img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/1855c591-c7f6-4deb-97d5-0740599780b1" width="600" height="400">  
 <img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/fb8822c4-27e7-4870-ab48-a315c42e73b5" width="200" height="400">  
-<img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/1855c591-c7f6-4deb-97d5-0740599780b1" width="600" height="400">  
+<img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/aeebf987-75d3-4dca-a01e-958492de4549" width="600" height="400">  
 
 
 -------------------------------------------------------------------------
@@ -117,7 +117,7 @@ Kodun ana bölümleri şunlardır:
 
 ## Ekran Görüntüleri
 <img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/9fffec75-78a3-4111-9bbf-d3436d0cc421" width="200" height="400">  
-<img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/1855c591-c7f6-4deb-97d5-0740599780b1" width="200" height="400">  
+<img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/1855c591-c7f6-4deb-97d5-0740599780b1" width="600" height="400">  
 <img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/fb8822c4-27e7-4870-ab48-a315c42e73b5" width="200" height="400">  
-<img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/1855c591-c7f6-4deb-97d5-0740599780b1" width="200" height="400">  
+<img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/aeebf987-75d3-4dca-a01e-958492de4549" width="600" height="400">  
 
