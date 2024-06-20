@@ -52,6 +52,7 @@ Here is a summary of the key methods used:
 - `auth.getAvailableBiometrics()`: Retrieves the list of available biometric types.
 - `auth.authenticate()`: Prompts the user to authenticate using biometrics.
 
+
 ## Screenshot 
 
 <img src="https://github.com/HaticeDilmac/faceid_fingerprint_authentication/assets/100489350/9fffec75-78a3-4111-9bbf-d3436d0cc421" width="200" height="400">  
@@ -115,6 +116,7 @@ Kodun ana bölümleri şunlardır:
 - `auth.isDeviceSupported()`: Cihazın biyometrik kimlik doğrulamayı destekleyip desteklemediğini kontrol eder.
 - `auth.getAvailableBiometrics()`: Kullanılabilir biyometrik türlerin listesini alır.
 - `auth.authenticate()`: Kullanıcıyı biyometrik kimlik doğrulaması yapmaya yönlendirir.
+
 
 ## Ekran Görüntüleri
 
